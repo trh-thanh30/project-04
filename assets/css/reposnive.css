@@ -375,14 +375,12 @@
         font-size: 4.2rem;
     }
 
-    .pricing__desc{
-        width: 46%;
+    .pricing__desc-body {
+        width: 100%;
+        margin: 0 auto;
     }
     .pricing__sale-off{
         display: none;
-    }
-    .reviews__right{
-        /* width: 100%; */
     }
 
     .reviews__right {
@@ -416,5 +414,9 @@
     }
     .footer__right-top-heading-text--bottom-next{
         margin-top: 40px;
+    }
+    .blog__top-left{
+        width: 100%;
+        text-align: center;
     }
 }
