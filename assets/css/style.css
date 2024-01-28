@@ -10,6 +10,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #FFFAF5;
 }
+main{
+    overflow: hidden;
+}
 
 
 /*comomm*/
@@ -45,7 +48,7 @@ input, textarea, select, button{
     padding: 18px 0;
     position: sticky;
     top: -10px;
-    z-index: 999;
+    z-index: 40;
     background: #FFFAF5;
 }
 
@@ -130,7 +133,9 @@ input, textarea, select, button{
     width: 437px;
     z-index: 1;
     margin-bottom: -5px;
+    transition: transform 0.25s ease-in;
 }
+
 .img__crike2{
     position: absolute;
     bottom: 0;
@@ -341,7 +346,7 @@ input, textarea, select, button{
     position: absolute;
     top: 128px;
     left: -61px;
-    z-index: 99;
+    z-index: 10;
     width: 136px; 
     height: 156px;
     flex-shrink: 0;
@@ -688,7 +693,6 @@ input, textarea, select, button{
     display: flex;
     justify-content: space-around;
     margin-top: 35px;
-    overflow: hidden;
 }
 .staff-item{
     text-align: center;
@@ -697,6 +701,8 @@ input, textarea, select, button{
     margin: 0 16px;
     border-radius: 130px;
 }
+
+
 .img-background1,
 .img-background2,
 .img-background3,

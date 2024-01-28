@@ -32,14 +32,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <!--Style css-->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reposnive.css">
 
     
 </head>
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header header__fixed">
         <div class="container">
             <div class="header__nav">
+                <!-- Tablet/Mobile menu-->
+                <label class="toggle-menu" for="menu-checkbox">
+                    <svg fill="curentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
                 <a href="#">
                     <img class="header__logo" src="./assets/img/Logo.svg" alt="Lucky">
                 </a>
@@ -69,6 +74,40 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </header>
+    <!-- Tablet/mobie header-->
+    <header class="mobile-header hide-on-pc">
+        <input hidden type="checkbox" name="" id="menu-checkbox" class="menu-checkbox">
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-drawer">
+            <ul class="navbar__item-mobile">
+                <a href="#">
+                    <img  src="./assets/img/Logo.svg" alt="Lucky">
+                </a>
+                <li class="navbar__list">
+                    <a class="navbar__link navbar__link-active" href="#!">Home</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="#!">About</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="#!">Services & Rates</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="#!">Reviewa</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link" href="#!">Contacts us</a>
+                </li> 
+                <li class="signin--mobile hide-in-mobile">
+                    <a class="signin--mobile__link" href="#!">Sign In</a>
+                </li>
+                <li class="signup--mobile hide-in-mobile">
+                    <a class="signup--mobile__link" href="#!">Sign Up</a>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- Hero -->
@@ -235,7 +274,7 @@
                     </h2>
                 </div>
                 <div class="service__body">
-                    <div class="service__column">
+                    <div class="service__column service__column-mobile--open">
                         <div class="sevice-item">
                             <h3 class="service__item-heading">
                                 Puppy Sitting
@@ -278,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service__column">
+                    <div class="service__column service__column-mobile">
                         <figure class="service__media">
                             <img class="service__media--img" src="./assets/img/service-popy.svg" alt="poppy">
                         </figure>
@@ -660,6 +699,7 @@
                 <a href="/">
                     <img class="footer__logo" src="./assets/img/Logo.svg" alt="Lucky">
                 </a>
+               <div class="footer__center">
                 <form action="" class="subscribe-form">
                     <input type="email" name="" id="" placeholder="Enter your email" class="subscribe-form__input">
                     <button type="submit" class="subscribe-form__submit">
@@ -669,6 +709,7 @@
                         </svg>
                     </button>
                 </form>
+               </div>
                 <div class="footer__social-list">
                     <h3 class="footer__social-text">
                         Follow Us
